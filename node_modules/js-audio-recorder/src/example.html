@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>录音</title>
+    </head>
+    <body>
+        <h3>
+            操作
+        </h3>
+        <input type="button" value="录音开启" id="startRecord" />
+        <input type="button" value="暂停" id="pauseRecord" />
+        <input type="button" value="恢复" id="resumeRecord" />
+        <input type="button" value="录音停止" id="endRecord" />
+        <input type="button" value="播放录音" id="playRecord" />
+        <h3>
+            下载
+        </h3>
+        <input type="button" value="下载pcm" id="downloadPCM" />
+        <input type="button" value="下载wav" id="downloadWAV" />
+        <h3>
+            录音时长：<span id="time">0</span>s
+        </h3>
+        <h3>
+            声音波形图如下：
+        </h3>
+        <canvas id="canvas"></canvas>
+        <h3>
+            加载播放：
+        </h3>
+        <input type="file" value="加载文件播放" id="uploadAudio" />
+    </body>
+</html>
